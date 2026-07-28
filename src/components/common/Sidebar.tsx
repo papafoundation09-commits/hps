@@ -158,7 +158,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeSection, setActiveSectio
       <div className="p-3 bg-cyan-950/40 border border-cyan-800/40 rounded-xl text-xs text-cyan-200">
         <div className="flex items-center gap-2 mb-1">
           <Stethoscope className="w-4 h-4 text-cyan-400" />
-          <span className="font-bold text-white text-[11px]">CarePulse HIPAA Compliant</span>
+          <span className="font-bold text-white text-[11px]">srivoratech HIPAA Compliant</span>
         </div>
         <p className="text-[10px] text-cyan-300/80 leading-relaxed">
           256-bit AES encrypted teleconsultation streams & FHIR compliant EMR records.

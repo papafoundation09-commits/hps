@@ -13,7 +13,7 @@ export interface NotificationLog {
   status: "Queued" | "Sent" | "Delivered" | "Failed";
 }
 
-const NOTIFICATION_STORAGE_KEY = "carepulse_notification_logs";
+const NOTIFICATION_STORAGE_KEY = "srivoratech_notification_logs";
 
 export const getNotificationLogs = (): NotificationLog[] => {
   const stored = localStorage.getItem(NOTIFICATION_STORAGE_KEY);
@@ -34,7 +34,7 @@ export const getNotificationLogs = (): NotificationLog[] => {
       recipient: "+1 (555) 234-5678",
       type: "SMS",
       channel: "Twilio SMS Gateway",
-      template: "Reminder: Your Teleconsultation with Dr. Sarah Jenkins is scheduled today at 10:30 AM. Join link: https://carepulse.health/live/CP-T08",
+      template: "Reminder: Your Teleconsultation with Dr. Sarah Jenkins is scheduled today at 10:30 AM. Join link: https://srivoratech.health/live/CP-T08",
       scheduledTime: "2026-07-29 08:30 AM",
       sentTime: "2026-07-29 08:30 AM",
       status: "Delivered"
@@ -46,7 +46,7 @@ export const getNotificationLogs = (): NotificationLog[] => {
       recipient: "michael.chang@example.com",
       type: "Email",
       channel: "SendGrid SMTP",
-      template: "CarePulse Appointment Confirmation: Video Consultation with Dr. Sarah Jenkins (Cardiology) on July 29, 2026 at 10:30 AM.",
+      template: "srivoratech Appointment Confirmation: Video Consultation with Dr. Sarah Jenkins (Cardiology) on July 29, 2026 at 10:30 AM.",
       scheduledTime: "2026-07-28 10:30 AM",
       sentTime: "2026-07-28 10:30 AM",
       status: "Delivered"
@@ -82,7 +82,7 @@ export const sendInstantReminder = (
   const template =
     type === "Email"
       ? `Dear ${appointment.patientName}, this is a reminder for your upcoming ${appointment.consultType} consultation with ${appointment.doctorName} (${appointment.doctorSpecialty}) on ${appointment.date} at ${appointment.timeSlot}. Token: ${appointment.tokenNumber}.`
-      : `CarePulse Alert: Hi ${appointment.patientName}, your appointment with ${appointment.doctorName} is on ${appointment.date} at ${appointment.timeSlot}. Join/Checkin token: ${appointment.tokenNumber}.`;
+      : `srivoratech Alert: Hi ${appointment.patientName}, your appointment with ${appointment.doctorName} is on ${appointment.date} at ${appointment.timeSlot}. Join/Checkin token: ${appointment.tokenNumber}.`;
 
   const newLog: NotificationLog = {
     id: `notif-${Date.now()}`,

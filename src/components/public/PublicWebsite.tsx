@@ -121,10 +121,10 @@ export const PublicWebsite: React.FC<{
                   className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-10 pr-3 py-2.5 text-xs text-white focus:outline-none focus:border-cyan-500 cursor-pointer"
                   id="hospital-location-select"
                 >
-                  <option value="All">All CarePulse Hospital Campuses</option>
-                  <option value="Metro">CarePulse Metro Heart Institute</option>
-                  <option value="Neuro">CarePulse Neuro Science Center</option>
-                  <option value="Children">CarePulse Children's Hospital</option>
+                  <option value="All">All srivoratech Hospital Campuses</option>
+                  <option value="Metro">srivoratech Metro Heart Institute</option>
+                  <option value="Neuro">srivoratech Neuro Science Center</option>
+                  <option value="Children">srivoratech Children's Hospital</option>
                 </select>
               </div>
             </div>
@@ -311,9 +311,9 @@ export const PublicWebsite: React.FC<{
 
           <div className="space-y-4">
             {[
-              { q: "How do virtual teleconsultations work?", a: "After booking an appointment slot, join the CarePulse HD Video room directly from your browser. Your doctor will review your EMR vitals, conduct the call, and instantly generate a legally verified digital prescription." },
-              { q: "Are digital prescriptions valid at local pharmacies?", a: "Yes. All CarePulse digital prescriptions are cryptographically signed with QR verification keys, accepted at retail pharmacies and directly fulfillable by CarePulse Pharmacy." },
-              { q: "Can I view my DICOM radiology images (X-ray, CT, MRI)?", a: "Yes. CarePulse features an integrated PACS DICOM viewer allowing patients and clinicians to zoom, measure, adjust contrast, and cycle through image slices in real time." },
+              { q: "How do virtual teleconsultations work?", a: "After booking an appointment slot, join the srivoratech HD Video room directly from your browser. Your doctor will review your EMR vitals, conduct the call, and instantly generate a legally verified digital prescription." },
+              { q: "Are digital prescriptions valid at local pharmacies?", a: "Yes. All srivoratech digital prescriptions are cryptographically signed with QR verification keys, accepted at retail pharmacies and directly fulfillable by srivoratech Pharmacy." },
+              { q: "Can I view my DICOM radiology images (X-ray, CT, MRI)?", a: "Yes. srivoratech features an integrated PACS DICOM viewer allowing patients and clinicians to zoom, measure, adjust contrast, and cycle through image slices in real time." },
               { q: "Is insurance claim submission automated?", a: "Our billing staff processes claims directly with connected insurance providers. Out-of-pocket costs and approved claim breakdowns are generated instantly." }
             ].map((faq, idx) => (
               <div key={idx} className="bg-slate-900 border border-slate-800 rounded-2xl p-4">
@@ -334,7 +334,7 @@ export const PublicWebsite: React.FC<{
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Stethoscope className="w-5 h-5 text-cyan-400" />
-              <span className="font-bold text-white text-base">CarePulse OS</span>
+              <span className="font-bold text-white text-base">srivoratech OS</span>
             </div>
             <p className="text-xs text-slate-400 leading-relaxed">
               Integrated Hospital Management System & High-Definition Teleconsultation Platform.

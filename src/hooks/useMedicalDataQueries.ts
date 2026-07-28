@@ -22,7 +22,7 @@ const FALLBACK_SOAP_NOTES: SoapNote[] = [
 // Mock API service layer with network simulation
 export const fetchAppointmentsApi = async (): Promise<Appointment[]> => {
   // Simulate network latency / offline fallback
-  const cached = localStorage.getItem("carepulse_appointments_cache");
+  const cached = localStorage.getItem("srivoratech_appointments_cache");
   if (cached) {
     try {
       return JSON.parse(cached);
@@ -30,12 +30,12 @@ export const fetchAppointmentsApi = async (): Promise<Appointment[]> => {
       // fallback
     }
   }
-  localStorage.setItem("carepulse_appointments_cache", JSON.stringify(INITIAL_APPOINTMENTS));
+  localStorage.setItem("srivoratech_appointments_cache", JSON.stringify(INITIAL_APPOINTMENTS));
   return INITIAL_APPOINTMENTS;
 };
 
 export const fetchSoapNotesApi = async (patientId?: string): Promise<SoapNote[]> => {
-  const cached = localStorage.getItem("carepulse_soap_notes_cache");
+  const cached = localStorage.getItem("srivoratech_soap_notes_cache");
   let notes: SoapNote[] = FALLBACK_SOAP_NOTES;
   if (cached) {
     try {
@@ -44,7 +44,7 @@ export const fetchSoapNotesApi = async (patientId?: string): Promise<SoapNote[]>
       notes = FALLBACK_SOAP_NOTES;
     }
   } else {
-    localStorage.setItem("carepulse_soap_notes_cache", JSON.stringify(FALLBACK_SOAP_NOTES));
+    localStorage.setItem("srivoratech_soap_notes_cache", JSON.stringify(FALLBACK_SOAP_NOTES));
   }
 
   if (patientId) {
@@ -54,13 +54,13 @@ export const fetchSoapNotesApi = async (patientId?: string): Promise<SoapNote[]>
 };
 
 export const fetchDoctorsApi = async (): Promise<Doctor[]> => {
-  const cached = localStorage.getItem("carepulse_doctors_cache");
+  const cached = localStorage.getItem("srivoratech_doctors_cache");
   if (cached) {
     try {
       return JSON.parse(cached);
     } catch (e) {}
   }
-  localStorage.setItem("carepulse_doctors_cache", JSON.stringify(INITIAL_DOCTORS));
+  localStorage.setItem("srivoratech_doctors_cache", JSON.stringify(INITIAL_DOCTORS));
   return INITIAL_DOCTORS;
 };
 
@@ -102,7 +102,7 @@ export function useAddSoapNoteMutation() {
     mutationFn: async (newNote: SoapNote) => {
       const existing = await fetchSoapNotesApi();
       const updated = [newNote, ...existing];
-      localStorage.setItem("carepulse_soap_notes_cache", JSON.stringify(updated));
+      localStorage.setItem("srivoratech_soap_notes_cache", JSON.stringify(updated));
       return updated;
     },
     onSuccess: (updatedData) => {

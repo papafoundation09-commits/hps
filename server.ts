@@ -12,7 +12,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json({ limit: "10mb" }));
 
@@ -334,14 +334,14 @@ app.post("/api/ai/chat", async (req, res) => {
     if (!apiKey) {
       const lastUserMsg = messages && messages.length > 0 ? messages[messages.length - 1].content : "";
       return res.json({
-        text: `CarePulse AI Assistant: In response to "${lastUserMsg}", I recommend consulting with your primary care doctor. Operating in clinical fallback mode until GEMINI_API_KEY is configured in project secrets.`
+        text: `srivoratech AI Assistant: In response to "${lastUserMsg}", I recommend consulting with your primary care doctor. Operating in clinical fallback mode until GEMINI_API_KEY is configured in project secrets.`
       });
     }
 
     const ai = new GoogleGenAI({ apiKey });
     const formattedMessages = (messages || []).map((m: { role: string; content: string }) => `${m.role.toUpperCase()}: ${m.content}`).join("\n");
     
-    const prompt = `System: You are CarePulse AI, a compassionate and highly qualified clinical healthcare assistant on the CarePulse Teleconsultation & EMR platform. The current user persona is ${userRole || "Patient"}. Answer accurately, clearly, and concisely. If giving patient health advice, add a brief standard disclaimer.
+    const prompt = `System: You are srivoratech AI, a compassionate and highly qualified clinical healthcare assistant on the srivoratech Teleconsultation & EMR platform. The current user persona is ${userRole || "Patient"}. Answer accurately, clearly, and concisely. If giving patient health advice, add a brief standard disclaimer.
 
 Conversation History:
 ${formattedMessages}
@@ -353,11 +353,11 @@ Assistant:`;
       contents: prompt,
     });
 
-    res.json({ text: response.text || "CarePulse AI response generated." });
+    res.json({ text: response.text || "srivoratech AI response generated." });
   } catch (error: any) {
     console.error("Error in /api/ai/chat:", error);
     res.json({
-      text: "CarePulse AI is temporarily in standalone mode. Please consult your physician or CarePulse support team."
+      text: "srivoratech AI is temporarily in standalone mode. Please consult your physician or srivoratech support team."
     });
   }
 });
@@ -427,7 +427,7 @@ async function startServer() {
   }
 
   server.listen(PORT, "0.0.0.0", () => {
-    console.log(`CarePulse HealthCare Server with WebSockets running on http://0.0.0.0:${PORT}`);
+    console.log(`srivoratech HealthCare Server with WebSockets running on http://0.0.0.0:${PORT}`);
   });
 }
 

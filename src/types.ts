@@ -194,7 +194,7 @@ export interface Invoice {
   insuranceClaimedAmount: number;
   outOfPocketAmount: number;
   status: "Paid" | "Pending" | "Claim Submitted" | "Claim Approved" | "Claim Rejected";
-  paymentMethod?: "Credit Card" | "Insurance Direct" | "CarePulse Wallet" | "Cash" | "UPI";
+  paymentMethod?: "Credit Card" | "Insurance Direct" | "srivoratech Wallet" | "Cash" | "UPI";
 }
 
 export interface SecureMessage {

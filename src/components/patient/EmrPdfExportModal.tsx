@@ -49,7 +49,7 @@ export const EmrPdfExportModal: React.FC<EmrPdfExportModalProps> = ({
       <!DOCTYPE html>
       <html>
         <head>
-          <title>CarePulse EMR Summary Document - ${patientName}</title>
+          <title>srivoratech EMR Summary Document - ${patientName}</title>
           <style>
             body {
               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -194,7 +194,7 @@ export const EmrPdfExportModal: React.FC<EmrPdfExportModalProps> = ({
           <div className="border-b-2 border-cyan-500 pb-4 flex justify-between items-start">
             <div>
               <h1 className="text-xl font-extrabold text-cyan-400 tracking-tight flex items-center gap-2">
-                <span>CarePulse Healthcare Network</span>
+                <span>srivoratech Healthcare Network</span>
                 <span className="text-[10px] bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 px-2 py-0.5 rounded font-mono font-semibold">
                   HIPAA VERIFIED EMR
                 </span>
@@ -326,7 +326,7 @@ export const EmrPdfExportModal: React.FC<EmrPdfExportModalProps> = ({
           {/* Footer Notice */}
           <div className="border-t border-slate-800 pt-3 text-[10px] text-slate-500 text-center space-y-1 font-mono">
             <p>CONFIDENTIAL MEDICAL RECORD — FOR AUTHORIZED CLINICAL & PATIENT USE ONLY</p>
-            <p>CarePulse Integrated Digital EMR Platform | Security Compliance Token: CP-HIPAA-2026-99A</p>
+            <p>srivoratech Integrated Digital EMR Platform | Security Compliance Token: CP-HIPAA-2026-99A</p>
           </div>
         </div>
       </div>

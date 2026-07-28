@@ -1,5 +1,5 @@
 {
-  "name": "CarePulse - Hospital EMR & Teleconsultation Platform",
+  "name": "srivoratech - Hospital EMR & Teleconsultation Platform",
   "description": "Comprehensive healthcare platform featuring patient scheduling, doctor EMR with AI SOAP notes, live video teleconsultation, lab/radiology DICOM viewer, pharmacy, and secure patient-provider messaging.",
   "requestFramePermissions": ["camera", "microphone"],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]

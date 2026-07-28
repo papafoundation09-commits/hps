@@ -47,7 +47,7 @@ export const SyncStatusModal: React.FC<SyncStatusModalProps> = ({ isOpen, onClos
             </div>
             <div>
               <h2 className="text-lg font-bold text-white flex items-center gap-2">
-                <span>CarePulse Offline Sync & Persistence Manager</span>
+                <span>srivoratech Offline Sync & Persistence Manager</span>
                 <span className="text-xs bg-slate-800 text-cyan-400 border border-slate-700 px-2 py-0.5 rounded font-mono">
                   Redis-Queue Mode
                 </span>
@@ -221,7 +221,7 @@ export const SyncStatusModal: React.FC<SyncStatusModalProps> = ({ isOpen, onClos
         <div className="bg-slate-950 p-3.5 rounded-2xl border border-slate-800/80 text-xs text-slate-400 flex items-center gap-2">
           <ShieldCheck className="w-4 h-4 text-cyan-400 shrink-0" />
           <span>
-            CarePulse uses local browser storage resilience to ensure HIPAA clinical records are never lost during sudden connectivity loss.
+            srivoratech uses local browser storage resilience to ensure HIPAA clinical records are never lost during sudden connectivity loss.
           </span>
         </div>
       </div>

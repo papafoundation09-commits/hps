@@ -19,8 +19,8 @@ export interface SoapDraft {
   lastSavedAt: string;
 }
 
-const SYNC_QUEUE_KEY = "carepulse_offline_sync_queue";
-const SOAP_DRAFT_PREFIX = "carepulse_soap_draft_";
+const SYNC_QUEUE_KEY = "srivoratech_offline_sync_queue";
+const SOAP_DRAFT_PREFIX = "srivoratech_soap_draft_";
 
 // --- SOAP Draft Management ---
 export const saveSoapDraft = (

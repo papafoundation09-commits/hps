@@ -76,7 +76,7 @@ export const HospitalAdminPortal: React.FC<{ activeSection: string }> = ({ activ
             <Building2 className="w-7 h-7 text-cyan-400" />
             <span className="capitalize">{currentRole.replace("_", " ")} Portal</span>
           </h1>
-          <p className="text-xs text-slate-400">CarePulse Operational Hospital Management & Resource Controls</p>
+          <p className="text-xs text-slate-400">srivoratech Operational Hospital Management & Resource Controls</p>
         </div>
 
         <div className="flex items-center gap-2 text-xs">

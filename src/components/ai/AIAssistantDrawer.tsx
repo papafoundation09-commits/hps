@@ -21,7 +21,7 @@ export const AIAssistantDrawer: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: "model",
-      content: `Hello! I am CarePulse AI, your clinical intelligence assistant. I am configured for your current perspective as **${currentRole.replace("_", " ").toUpperCase()}**. How can I assist you with clinical guidelines, drug interaction inquiries, or patient education?`
+      content: `Hello! I am srivoratech AI, your clinical intelligence assistant. I am configured for your current perspective as **${currentRole.replace("_", " ").toUpperCase()}**. How can I assist you with clinical guidelines, drug interaction inquiries, or patient education?`
     }
   ]);
   const [input, setInput] = useState<string>("");
@@ -81,7 +81,7 @@ export const AIAssistantDrawer: React.FC = () => {
             </div>
             <div>
               <h3 className="font-bold text-sm text-white flex items-center gap-1.5">
-                CarePulse AI Assistant
+                srivoratech AI Assistant
                 <Sparkles className="w-3.5 h-3.5 text-cyan-400" />
               </h3>
               <p className="text-[10px] text-slate-400 capitalize">
@@ -153,7 +153,7 @@ export const AIAssistantDrawer: React.FC = () => {
               <div className="w-7 h-7 rounded-lg bg-cyan-600/30 border border-cyan-500/40 flex items-center justify-center text-cyan-300">
                 <RefreshCw className="w-3.5 h-3.5 animate-spin" />
               </div>
-              <span>CarePulse AI is reviewing clinical literature...</span>
+              <span>srivoratech AI is reviewing clinical literature...</span>
             </div>
           )}
         </div>
@@ -164,7 +164,7 @@ export const AIAssistantDrawer: React.FC = () => {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Ask CarePulse AI clinical query..."
+            placeholder="Ask srivoratech AI clinical query..."
             className="flex-1 bg-slate-900 border border-slate-800 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500"
           />
           <button

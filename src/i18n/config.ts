@@ -4,7 +4,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
-      appName: "CarePulse Network",
+      appName: "srivoratech Network",
       rolePatient: "Patient Portal",
       roleDoctor: "Doctor Portal",
       roleHospitalAdmin: "Reception & Admin",
@@ -55,7 +55,7 @@ const resources = {
   },
   es: {
     translation: {
-      appName: "Red CarePulse",
+      appName: "Red srivoratech",
       rolePatient: "Portal de Pacientes",
       roleDoctor: "Portal de Médicos",
       roleHospitalAdmin: "Recepción y Admin",
@@ -106,7 +106,7 @@ const resources = {
   },
   fr: {
     translation: {
-      appName: "Réseau CarePulse",
+      appName: "Réseau srivoratech",
       rolePatient: "Portail Patient",
       roleDoctor: "Portail Médecin",
       roleHospitalAdmin: "Réception & Admin",

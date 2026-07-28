@@ -151,7 +151,7 @@ export const TeleconsultationRoom: React.FC<{
           <div className="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
           <div>
             <h2 className="font-bold text-sm text-white flex items-center gap-2">
-              <span>CarePulse HD Encrypted Teleconsultation</span>
+              <span>srivoratech HD Encrypted Teleconsultation</span>
               <span className="bg-cyan-500/20 text-cyan-300 text-[10px] font-mono px-2 py-0.5 rounded border border-cyan-500/30">
                 256-bit AES
               </span>

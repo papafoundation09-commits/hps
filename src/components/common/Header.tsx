@@ -82,7 +82,7 @@ export const Header: React.FC<{
             </div>
             <div>
               <span className="font-bold text-lg tracking-tight text-white flex items-center gap-1">
-                CarePulse <span className="text-xs bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 font-medium px-1.5 py-0.5 rounded">EMR 3.0</span>
+                srivoratech <span className="text-xs bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 font-medium px-1.5 py-0.5 rounded">EMR 3.0</span>
               </span>
               <p className="text-[10px] text-slate-400 font-medium -mt-0.5">Teleconsultation & Hospital OS</p>
             </div>
@@ -196,7 +196,7 @@ export const Header: React.FC<{
             id="ai-clinical-drawer-btn"
           >
             <Bot className="w-4 h-4 text-cyan-400" />
-            <span className="hidden md:inline">CarePulse AI</span>
+            <span className="hidden md:inline">srivoratech AI</span>
           </button>
 
           {/* Perspective Role Switcher */}
@@ -234,7 +234,7 @@ export const Header: React.FC<{
 
           {/* Emergency SOS Call trigger */}
           <button
-            onClick={() => alert("Connecting to CarePulse 24/7 Emergency Dispatch Center (1-800-CARE-911)...")}
+            onClick={() => alert("Connecting to srivoratech 24/7 Emergency Dispatch Center (1-800-SRIVORA-911)...")}
             className="bg-red-600/90 hover:bg-red-600 text-white p-2 rounded-lg transition-colors shadow-sm"
             title="Emergency Hotline"
             id="emergency-call-header-btn"

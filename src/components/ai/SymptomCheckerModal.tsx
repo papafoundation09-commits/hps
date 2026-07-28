@@ -96,7 +96,7 @@ export const SymptomCheckerModal: React.FC = () => {
               <Sparkles className="w-5 h-5" />
             </div>
             <div>
-              <h3 className="font-bold text-base text-white">CarePulse AI Symptom Triage</h3>
+              <h3 className="font-bold text-base text-white">srivoratech AI Symptom Triage</h3>
               <p className="text-xs text-slate-400">Powered by Gemini 3.6 Flash Clinical Engine</p>
             </div>
           </div>

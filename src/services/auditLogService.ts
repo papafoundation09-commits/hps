@@ -15,7 +15,7 @@ export interface AuditLogEntry {
   complianceFlag: "HIPAA Compliant" | "Access Alert" | "Standard Action";
 }
 
-const AUDIT_LOGS_STORAGE_KEY = "carepulse_hipaa_audit_logs";
+const AUDIT_LOGS_STORAGE_KEY = "srivoratech_hipaa_audit_logs";
 
 export const getAuditLogs = (): AuditLogEntry[] => {
   const stored = localStorage.getItem(AUDIT_LOGS_STORAGE_KEY);

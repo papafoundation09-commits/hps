@@ -377,7 +377,7 @@ export const PatientPortal: React.FC<{
                   >
                     <option value="Credit Card">Credit Card / Debit Card</option>
                     <option value="Insurance Direct">Direct Insurance Claim (Pre-authorized)</option>
-                    <option value="CarePulse Wallet">CarePulse Wallet (Balance: $450)</option>
+                    <option value="srivoratech Wallet">srivoratech Wallet (Balance: $450)</option>
                   </select>
                 </div>
               </div>
@@ -565,7 +565,7 @@ export const PatientPortal: React.FC<{
                 <h3 className="font-bold text-base text-white">QR Verification</h3>
                 <div className="bg-white p-4 rounded-2xl inline-block shadow-inner">
                   <div className="w-44 h-44 border-4 border-slate-900 flex items-center justify-center bg-slate-100 text-slate-900 font-mono text-[10px] font-bold p-2 text-center">
-                    [AUTHENTIC CAREPULSE DIGITAL SIGNATURE]
+                    [AUTHENTIC SRIVORATECH DIGITAL SIGNATURE]
                     <br />
                     {activeQrModalRx.slice(0, 24)}...
                   </div>
